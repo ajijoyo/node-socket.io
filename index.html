@@ -1,14 +1,15 @@
 <html>
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script src="/socket.io/socket.io.js"></script>
     <script>
       var socket = io();
       var el = null
       var lu = null
 
-      $( document ).ready(function() {
+      $(document).ready(function() {
         el = document.getElementById('server-time');
         lu = document.getElementById('messages');
-        
+
         });
 
       socket.on('time', function(timeString) {
