@@ -22,16 +22,14 @@
 
       socket.on('chat',function(data){
         console.log(data);
-        var li = document.createElement('li');
-        li.innerHTML = ""+data
-        lu.appendChild(li);
+        $('#messages').append($('<li>').text(data));
       })
 
       function sendMessage(){
         socket.emit('chat',$('#m').val())
         console.log($('#m').val());
         $('#m').val('')
-        return false
+        return false;
       }
 
     </script>
