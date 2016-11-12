@@ -19,7 +19,7 @@
       })
 
       function sendMessage(){
-        socket.emit('chat',$(#m).val())
+        socket.emit('chat',$('#m').val())
         console.log($('#m').val());
         $('#m').val('')
       }
