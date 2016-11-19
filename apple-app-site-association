@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+    {
+      "appID": "242AGQ98SM.com.kapoocino.ios.client",
+      "paths": ["*"]
+    }
+    ]
+  }
+}
